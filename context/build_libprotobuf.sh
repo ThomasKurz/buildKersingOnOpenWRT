@@ -1,8 +1,8 @@
 #!/bin/#!/usr/bin/env bash
 
 export ARCH=mips
-export CROSS_COMPILE=mips-linux-gnu-
-export CC=mips-linux-gnu-gcc
+export CROSS_COMPILE=mips-openwrt-linux-musl-
+export CC=mips-openwrt-linux-musl-gcc
 set -e
 echo "Make libprotobuf"
 cd protobuf-c
