@@ -1,0 +1,13 @@
+version: '2'
+services:
+  kmpbuild:
+    container_name:           kmpbuild
+    build:
+      context:                context
+      dockerfile:             Dockerfile
+    environment:
+      DEBUGAUTOEXECJOBS: 'TRUE'
+    volumes:
+      - ./bindir:/bindir
+    # command: cp /kersing/packet_forwarder/mp_pkt_fwd/mp_pkt_fwd /bindir/mp_pkt_fwd
+    command: tail -f /dev/null
